@@ -123,6 +123,32 @@ def find_cities(df, cities):
     
 def app():
     st.title('Exploration Station')
+    with st.beta_expander("FAQ"):
+        st.write("""
+        1. __Another website?__ \n
+            A: Blink once, get 2 new websites from Pete.
+        2. __So what is this one for?__ \n
+            A: It started as a way to easily get walkability score and weather in big cities.
+        3. __What is it's future?__ \n
+            A: Hopefully a one-stop-shop database for checking relevant info on big cities. Current ideas include:
+            * Crowd-sourced submission of cheapest 'entire place for a month' airbnb price (Airbnb only shares API with partners)
+            * Average car rental price
+            * Income inequality score (ie: I look right and mansions, but if I look left slums?)
+            * Population average age
+            * Covid data
+            * Restriction data
+            * Select cities from map, not from dropdown box
+        4. __What's that Review option?__ \n
+            A: Placeholder for a travel blog thing where I post my fave pics from different destinations.
+        4. __Why is it so slow?__ \n
+            A: Everytime a city is submitted it calls a weather API. This is for demo purpose, eventually I'll scrape once a week and store in a db and selecting a city will just call my db.
+        4. __I want to help!__ \n
+            A: [Fork me, PR me, help me!](https://github.com/pomkos/travel_tools)
+        5. __I have an idea!__ \n
+            A: Nice! Submit it in the [suggestion box](https://box.peti.work)!
+
+        """)
+        
     df = pd.read_html('data/walkscore.html')[0]
     temp_col = '7 Day Avg Temp (F)' # i keep changing name
     cols = list(df.columns) + [temp_col]

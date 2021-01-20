@@ -1,9 +1,9 @@
 import streamlit as st
 
-st.title("Pete's Travels")
-st.write("Go ahead, click something!")
-
 def app():
+    st.title("Pete's Travels")
+    st.write("Go ahead, click something!")
+
     year = st.sidebar.select_slider("Choose a year",options=[2021, 2020, 2019, 2016, 2012])
 
     if year == 2012:
