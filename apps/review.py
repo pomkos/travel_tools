@@ -20,7 +20,15 @@ def app():
     selection = selection.lower()
 
     if 'mexico' in selection:
-        st.image('images/airport1.jpg', width=360)
+        st.write("""
+        1. Plans on Jan 23, 2021:
+            1. __Panama City Beach -> Dallas__: Leave 10:00am. Arrive 12:21pm.
+            2. __Dallas -> Mexico City__: Leave 10:10pm. Arrive 12:59am.
+        2. Plans Jan 24 - Feb 5
+            1. :)
+        3. Plans after Feb 5:
+            1. Unknown.
+        """)
     if 'florida' in selection:
         st.image('images/florida.jpg', width=620)
     if 'road' in selection:
