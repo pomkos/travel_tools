@@ -130,7 +130,7 @@ def app():
         2. __So what is this one for?__ \n
             A: It started as a way to easily get walkability score and weather in big cities.
         3. __What is it's future?__ \n
-            A: Hopefully a one-stop-shop database for checking relevant info on big cities. Current ideas include:
+            A: Hopefully a one-stop-shop database for checking relevant info on big cities. Nomadlist, but selective and functional. Current ideas include:
             * Crowd-sourced submission of cheapest 'entire place for a month' airbnb price (Airbnb only shares API with partners)
             * Average car rental price
             * Income inequality score (ie: I look right and mansions, but if I look left slums?)
