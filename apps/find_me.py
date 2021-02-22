@@ -26,6 +26,5 @@ def app():
     # admin page
     admin = st.experimental_get_query_params()
     if admin:
-        if admin[0] == True:
-            admin()
+        admin()
 app()
