@@ -77,9 +77,11 @@ def app():
 
     st.image("images/pete.jpg")
 
-
     with st.beta_expander("Picking Pete up?"):
-        st.image("images/ticket.png")
+        try:
+            st.image("images/ticket.png")
+        except:
+            st.error("No image found.")
     
     # admin page
     admin = st.experimental_get_query_params()
