@@ -5,7 +5,7 @@ def settings():
     '''
     Upload status and files
     '''
-    col1, col2 = st.beta_columns()
+    col1, col2 = st.beta_columns(2)
     
     with col1:
         current_loc = st.text_input("Where are you?")
