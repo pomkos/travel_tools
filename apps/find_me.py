@@ -1,7 +1,7 @@
 import streamlit as st
 import datetime as dt
 
-def admin():
+def settings():
     '''
     Upload status and files
     '''
@@ -26,5 +26,5 @@ def app():
     # admin page
     admin = st.experimental_get_query_params()
     if admin:
-        admin()
+        settings()
 app()
